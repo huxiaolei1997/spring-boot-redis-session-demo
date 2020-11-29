@@ -1,0 +1,13 @@
+spring:
+  session:
+    store-type: redis
+    timeout: 60s
+    redis:
+      flush-mode: on_save
+      namespace: springboot:session
+  redis:
+    host: localhost
+    password: 123456
+    port: 6379
+server:
+  port: 8080
